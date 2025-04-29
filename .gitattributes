@@ -19,7 +19,6 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.avif filter=lfs diff=lfs merge=lfs -text
 >>>>>>> 97bd6e7cfd454eb08e8c3a560300611670cd30a6
-Opinion-mining/comments.csv filter=lfs diff=lfs merge=lfs -text
 =======
 *.png filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
