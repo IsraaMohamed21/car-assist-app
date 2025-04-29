@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "793eeda2-81a4-4aeb-9f72-fa3bb19542eb",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26683261"
+	},
+	"item": [
+		{
+			"name": "service/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "discription",
+							"value": "this is winch service",
+							"type": "text"
+						},
+						{
+							"key": "service_name",
+							"value": "winch",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/nader/Downloads/124509.85cc85abd2ec7e26b05a.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/service/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"service",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"seif2\",\r\n    \"email\" : \"seif2@info.com\",\r\n    \"password\" : \"12345678\",\r\n    \"service_id\": 2,\r\n    \"location\":\"29.21656 ,30.566\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/employee/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoibm4iLCJlbWFpbCI6Im5AZGluc2ZvbS5jb20iLCJwaG9uZV9udW1iZXIiOiIxMTEwMTEiLCJpYXQiOjE3MTQ5MzI1OTcsImV4cCI6MTcxNTAxODk5N30.ayYSl7BxaOYGVcTcyZxOecaoNq6PH0DRZlmwzu7ahDU",
+						"uuid": "a32724e8-f920-463e-9488-b4f91e5363e3"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\" : \"01125257350\",\r\n    \"employee_id\" : 1,\r\n    \"service_id\": 1,\r\n    \"location\":\"29.21656 ,30.566\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/service/addRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"service",
+						"addRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"n@dinsfom.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"n@dinsfom.com\",\r\n    \"name\" : \"sc\",\r\n    \"phone\": \"055335\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/employee/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"employee",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "service/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/service/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"service",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee/getAll/:service_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/employee/get/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"employee",
+						"get",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
