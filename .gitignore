@@ -1,0 +1,24 @@
+# .gitignore file
+
+# Node.js (backend)
+backend/node_modules/
+backend/.env
+backend/dist/
+backend/build/
+backend/npm-debug.log
+backend/yarn-debug.log
+backend/yarn-error.log
+
+# React (frontend)
+frontend/node_modules/
+frontend/.env
+frontend/build/
+frontend/.DS_Store
+frontend/npm-debug.log
+frontend/yarn-debug.log
+frontend/yarn-error.log
+
+# General
+*.log
+.env
+.DS_Store
